@@ -1,0 +1,22 @@
+= form_for @presenter do |f|
+  - if @presenter.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@presenter.errors.count, "error")} prohibited this presenter from being saved:"
+      %ul
+        - @presenter.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :name
+    = f.text_field :name
+  .field
+    = f.label :email
+    = f.text_field :email
+  .field
+    = f.label :github_username
+    = f.text_field :github_username
+  .field
+    = f.label :twitter_username
+    = f.text_field :twitter_username
+  .actions
+    = f.submit 'Save'

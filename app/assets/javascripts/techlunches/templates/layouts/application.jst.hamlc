@@ -1,0 +1,11 @@
+.navbar.navbar-fixed-top
+  .navbar-inner
+    .container
+      %a.brand{:href => '#!/'}
+        TechLunches
+      %ul.nav
+        %li.divider-vertical
+        %li
+          %a{:href => '#!/techlunches/new'} Propose New
+
+.container{:id => @yield()}

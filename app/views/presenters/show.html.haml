@@ -1,0 +1,18 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @presenter.name
+%p
+  %b Email:
+  = @presenter.email
+%p
+  %b Github username:
+  = @presenter.github_username
+%p
+  %b Twitter username:
+  = @presenter.twitter_username
+
+= link_to 'Edit', edit_presenter_path(@presenter)
+\|
+= link_to 'Back', presenters_path

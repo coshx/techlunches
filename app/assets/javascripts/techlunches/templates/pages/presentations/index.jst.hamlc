@@ -1,0 +1,12 @@
+- @presentations.each (presentation) =>
+  .well
+    %h1
+      %i.icon-book
+      = presentation('title')
+      %sup.badge.badge-success
+        = presentation('created_on')
+        &mdash;
+        = presentation('presenter')
+    %hr
+    %p
+      = presentation('description')
