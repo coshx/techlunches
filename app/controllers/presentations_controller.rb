@@ -6,7 +6,7 @@ class PresentationsController < ApplicationController
 
     respond_to do |format|
       format.html # index.html.erb
-      format.json { render json: @presentations }
+      format.json { render json: @presentations, include: :presenter }
     end
   end
 

@@ -6,7 +6,7 @@
       %sup.badge.badge-success
         = presentation('created_on')
         &mdash;
-        = presentation('presenter')
+        = presentation('presenter')('name')
     %hr
     %p
       = presentation('description')
